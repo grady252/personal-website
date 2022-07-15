@@ -1,0 +1,19 @@
+.portrait {
+    width: 30vw;
+    max-width: 400px;
+}
+
+.home {
+    box-shadow: 0px 0px 5px rgb(155, 155, 155);
+    padding: 1rem;
+}
+
+.aboutMe {
+    text-align: center;
+    min-height: 10000px;
+}
+
+.aboutMeText {
+    max-width: 600px;
+    margin: auto;
+}
