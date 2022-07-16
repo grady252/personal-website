@@ -3,17 +3,18 @@
     max-width: 400px;
 }
 
-.home {
-    box-shadow: 0px 0px 5px rgb(155, 155, 155);
-    padding: 1rem;
+.backgroundImage {
+    background-image: url("../../public/savanah.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    z-index: -1;
+    transition: filter 300ms linear;
 }
 
-.aboutMe {
-    text-align: center;
-    min-height: 10000px;
-}
-
-.aboutMeText {
-    max-width: 600px;
-    margin: auto;
+.blurred {
+    filter: blur(4px);
 }
