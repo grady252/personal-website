@@ -1,24 +1,29 @@
 import React, { useState } from 'react'
-import {Nav, Navbar, Container} from 'react-bootstrap'
+import { useScroll } from '../../hooks/scrollHook';
+import Constants from '../../constants/constants';
+
 import './Navigation.css'
 
 function Navigation() {
 
-  const [top, setTop] = useState(true);
-  const changeColor = () => {
-    if (window.scrollY >= 10)
-      setTop(false);
+  let scroll = useScroll();
+
+  const display = () => {
+    if (window.location.href !== Constants.home)
+      return 'navigation solid'
+    if (scroll > 100 && scroll < 750)
+      return 'navigation hidden';
+    else if (scroll > 750)
+      return 'navigation solid';
     else
-      setTop(true);
+      return 'navigation';
   }
 
-  window.addEventListener('scroll', changeColor);
-
   return (
-    <div className={top ? 'navigation navigationTop' : 'navigation'}>
-      <a className={top ? 'navigationLink navigationLinkTop' : 'navigationLink'}>Home</a>
-      <a className={top ? 'navigationLink navigationLinkTop' : 'navigationLink'}>Projects</a>
-      <a className={top ? 'navigationLink navigationLinkTop' : 'navigationLink'}>About</a>
+    <div className={display()}>
+      <a className={'navigationLink'} href='/'>Home</a>
+      <a className={'navigationLink'} href = 'projects'>Projects</a>
+      <a className={'navigationLink'}>About</a>
     </div>
   )
 }
