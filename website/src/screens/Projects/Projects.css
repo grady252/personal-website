@@ -1,0 +1,15 @@
+.projects {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.projectsDisplay {
+    position: relative;
+    margin: auto;
+    top: 10vh;
+    background-color: white;
+    height: 85vh;
+    border-radius: 15px;
+    padding: 1rem;
+    max-width: 1500px;
+}
