@@ -1,0 +1,1 @@
+exports.home = "http://localhost:3000/";
