@@ -30,21 +30,41 @@ function Home() {
           <h1>Socials</h1>
           <div className='socials'>
             <div onClick={email}>
-              <IoMail/>
+              <IoMail />
               <p>Email</p>
             </div>
             <div onClick={linkedIn}>
-              <IoLogoLinkedin/>
+              <IoLogoLinkedin />
               <p>LinkedIn</p>
             </div>
             <div onClick={github}>
-              <IoLogoGithub/>
+              <IoLogoGithub />
               <p>Github</p>
             </div>
           </div>
-
           <h1>Education</h1>
-
+          <div className='education'>
+            <div className='uow'>
+              <h2>University of Waikato - BCMS(hons)</h2>
+              <h4>2020 - Present</h4>
+              <p>I am currently in my 4<sup>th</sup> year of my BCMS(hons) degree
+              at the University of Waikato.</p>
+              <p>The academic transcript of my achievements can be found <a href='AcademicRecord.pdf'>here</a>.</p>
+              <p>Some of the other achievements that I am proud of are:</p>
+              <ul>
+                <li>2020 - Te Ara Hou Scholarship</li>
+                <li>2020 - CMS Prize for Excellence at 100 level</li>
+                <li>2021 - CMS Prize for Excellence at 200 level</li>
+              </ul>
+            </div>
+            <div className='boys'>
+              <h2>Hamilton Boys High School</h2>
+              <h4>2015 - 2019</h4>
+              <p>I enjoyed my time at high school and was involved in many sports
+              including<br/>cricket, rugby and football. I am proud of my academic achievements
+              gaining<br/>academic excellence in Y13.</p>
+            </div>
+          </div>
           <h1>Skills</h1>
 
           <h1>Work Experience</h1>

@@ -79,3 +79,16 @@
 .socials > div:hover {
     color: grey;
 }
+
+.education > div {
+    margin-left: 1rem;
+    padding-left: 1rem;
+}
+
+.uow {
+    border-left: 4px solid #FAA61A;
+}
+
+.boys {
+    border-left: 4px solid #8f0100;
+}
