@@ -111,7 +111,7 @@ function Home() {
               <h2>University of Waikato</h2>
               <h3>Lab Demonstrator</h3>
               <h4>March 2022 - Present</h4>
-              <p>I help 100 and 200 level students with their lab work.</p>
+              <p>I helped 100 and 200 level students with their lab work.</p>
             </div>
           </div>
         </div>

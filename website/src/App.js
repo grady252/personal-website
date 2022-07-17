@@ -9,10 +9,17 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Navigation from "./compomnents/Navigation/Navigation";
 import Constants from './constants/constants';
 import { useScroll } from './hooks/scrollHook';
+import { useEffect, useState } from "react";
 
 
 function App() {
   let scroll = useScroll();
+  const images = ['ocean.jpg', 'ocean2.jpg', 'savanah.jpg'];
+  const [image, setImage] = useState('');
+
+  useEffect(() => {
+    setImage(images[getRandomInt(images.length)])
+  }, [])
 
   const display = () => {
     if (window.location.href === Constants.home && scroll < 750)
@@ -21,9 +28,13 @@ function App() {
       return 'backgroundImage blurred';
   }
 
+  const getRandomInt = (max) => {
+    return Math.floor(Math.random() * max);
+  }
+
   return (
     <div>
-        <div className={display()}></div>
+        <div className={display()} style={{backgroundImage: "url(" + "images/"+ image + ")"}}></div>
         <Navigation/>
         <BrowserRouter>
           <Routes>
