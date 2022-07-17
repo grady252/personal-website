@@ -1,24 +1,32 @@
-import React from 'react'
+import { collection, getDocs } from 'firebase/firestore';
+import {firestore} from '../../firebase'
+import React, { useEffect, useState } from 'react'
 import './Projects.css'
-import { DataGrid } from '@mui/x-data-grid';
-
-
-const rows = [
-  { id: 1, col1: 'Hello', col2: 'World' },
-  { id: 2, col1: 'DataGridPro', col2: 'is Awesome' },
-  { id: 3, col1: 'MUI', col2: 'is Amazing' },
-];
-
-const columns = [
-  { field: 'col1', headerName: 'Column 1', width: 150 },
-  { field: 'col2', headerName: 'Column 2', width: 150 },
-];
+import Table from '../../compomnents/Table/Table';
+import Controls from '../../compomnents/Controls/Controls';
 
 function Projects() {
+  const [projects, setProjects] = useState([]);
+  const ref = collection(firestore, "projects");
+
+  const getData = async () => {
+    const query = await getDocs(ref);
+    const data = []
+    query.forEach((doc => {
+      data.push(doc.data());
+    }))
+    setProjects(data);
+  }
+
+  useEffect(() => {
+    getData();
+  }, []);
+
   return (
     <div className='projects'>
       <div className='projectsDisplay'>
-        <DataGrid columns={columns} rows={rows} />
+        <Controls projects={projects} setProjects={setProjects}/>
+        <Table projects={projects} setProjects={setProjects}/>
       </div>
     </div>
   )

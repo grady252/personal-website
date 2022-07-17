@@ -1,0 +1,11 @@
+.selectBoxContainer {
+    display: block;
+    background-color: #303030;
+    border: 3px solid rgb(34, 34, 34);
+    border-radius: 10px;
+    width: 15em;
+    padding: 1em;
+    overflow: scroll;
+    margin-top: 1em;
+    max-height: 80%;
+}

@@ -20,8 +20,8 @@ function Home() {
       <div className='aboutMe'>
         <div className='aboutMeText'>
           <h1>About Me</h1>
-          <p>Hi! My name is Grady, I am a software developer that is currently finishing up
-            my honors year at university. My interests are Web and mobile development,
+          <p>Hi! My name is Grady, I am a software developer currently finishing up
+            my honours year at university. My interests are web and mobile development,
             developing on the cloud, bioinformatics and algorithims.</p>
         </div>
       </div>
