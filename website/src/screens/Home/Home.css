@@ -84,7 +84,7 @@
     color: #ff7b00;
 }
 
-.education>div {
+.education>div, .workExperience>div {
     margin-left: 1rem;
     padding-left: 1rem;
 }
@@ -110,4 +110,12 @@
 
 .technologies>ul>li {
     width: max-content;
+}
+
+.centrix>p {
+    max-width: 40em;
+}
+
+.centrix {
+    border-left: 4px solid #29547b;
 }

@@ -68,7 +68,7 @@ function Home() {
           <h1>Skills</h1>
           <div className='skills'>
             <div className='technologies'>
-              <h4>Profficient in these languages and technologies:</h4>
+              <h5>Technical Skills:</h5>
               <ul>
                 <li>C#/.NET ecosystem ASP.NET</li>
                 <li>Java</li>
@@ -92,8 +92,28 @@ function Home() {
               </ul>
             </div>
           </div>
-
           <h1>Work Experience</h1>
+          <div className='workExperience'>
+            <div className='centrix'>
+              <h2>Centrix Consulting Ltd</h2>
+              <h3>SAP Support Assistant</h3>
+              <h4>July 2021 - Present</h4>
+              <p>In my SAP Support Assitant Role at Centrix I primarily focused on completing
+                stocktake work as well as other tickets for one of their European customers.</p>
+              <h3>Trainee Developer</h3>
+              <h4>Febuary 2022 - Present</h4>
+              <p>As a trainee developer at Centrix I have engaged in both their ABAP
+                and profesional training. I have also been working on an exciting web
+                based internal project for Centix.
+              </p>
+            </div>
+            <div className='uow'>
+              <h2>University of Waikato</h2>
+              <h3>Lab Demonstrator</h3>
+              <h4>March 2022 - Present</h4>
+              <p>I help 100 and 200 level students with their lab work.</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>

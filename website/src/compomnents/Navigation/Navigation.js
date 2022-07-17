@@ -9,9 +9,10 @@ function Navigation() {
   let scroll = useScroll();
 
   const display = () => {
+    let min = window.innerHeight / 5;
     if (window.location.href !== Constants.home)
       return 'navigation solid'
-    if (scroll > 100 && scroll < 750)
+    if (scroll > min && scroll < 750)
       return 'navigation hidden';
     else if (scroll > 750)
       return 'navigation solid';
