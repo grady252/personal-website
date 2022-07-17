@@ -48,7 +48,7 @@ function Home() {
               <h2>University of Waikato - BCMS(hons)</h2>
               <h4>2020 - Present</h4>
               <p>I am currently in my 4<sup>th</sup> year of my BCMS(hons) degree
-              at the University of Waikato.</p>
+                at the University of Waikato.</p>
               <p>The academic transcript of my achievements can be found <a href='AcademicRecord.pdf'>here</a>.</p>
               <p>Some of the other achievements that I am proud of are:</p>
               <ul>
@@ -61,11 +61,37 @@ function Home() {
               <h2>Hamilton Boys High School</h2>
               <h4>2015 - 2019</h4>
               <p>I enjoyed my time at high school and was involved in many sports
-              including<br/>cricket, rugby and football. I am proud of my academic achievements
-              gaining<br/>academic excellence in Y13.</p>
+                including<br />cricket, rugby and football. I am proud of my academic achievements
+                gaining<br />academic excellence in Y13.</p>
             </div>
           </div>
           <h1>Skills</h1>
+          <div className='skills'>
+            <div className='technologies'>
+              <h4>Profficient in these languages and technologies:</h4>
+              <ul>
+                <li>C#/.NET ecosystem ASP.NET</li>
+                <li>Java</li>
+                <li>JavaScript</li>
+                <li>TypeScript</li>
+                <li>PHP</li>
+                <li>Node</li>
+                <li>React</li>
+                <li>Express</li>
+                <li>Bash scripting</li>
+                <li>OpenCL</li>
+                <li>Cuda</li>
+                <li>Hadoop Map Reduce</li>
+                <li>Apache Spark</li>
+                <li>Docker</li>
+                <li>Android Development</li>
+                <li>Cloud (Azure)</li>
+                <li>SQL</li>
+                <li>Assembly</li>
+                <li>OpenCV</li>
+              </ul>
+            </div>
+          </div>
 
           <h1>Work Experience</h1>
         </div>

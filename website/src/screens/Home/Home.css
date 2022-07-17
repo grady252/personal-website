@@ -6,13 +6,14 @@
     text-align: center;
     padding: 1rem;
     border-radius: 20px;
-    max-width: 700px;
     margin: auto;
 }
 
 .aboutMeText {
-    position: relative;
-    top: 30vh;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     max-width: 650px;
     margin: auto;
     color: white;
@@ -22,13 +23,13 @@
     border-radius: 15px;
 }
 
-.aboutMeText > h1 {
+.aboutMeText>h1 {
     font-weight: 700;
     font-size: 60pt;
     text-shadow: 0px 0px 3px black;
 }
 
-.aboutMeText > p {
+.aboutMeText>p {
     font-size: 16pt;
     font-weight: 400;
     text-shadow: 0px 0px 3px black;
@@ -46,11 +47,12 @@
     background-color: white;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 5rem;
     padding: 3rem;
     min-height: 1000px;
 }
 
-.information > h1 {
+.information>h1 {
     font-size: 38pt;
 }
 
@@ -61,26 +63,28 @@
     margin: auto;
 }
 
-.socials > div {
+.socials>div {
     padding: 1rem;
     display: inline-block;
     width: min-content;
     text-align: center;
     cursor: pointer;
+    transition: color 200ms ease;
 }
 
-.socials > div > svg {
+.socials>div>svg {
     font-size: 38pt;
 }
-.socials > div > p {
+
+.socials>div>p {
     font-size: 20pt;
 }
 
-.socials > div:hover {
-    color: grey;
+.socials>div:hover {
+    color: #ff7b00;
 }
 
-.education > div {
+.education>div {
     margin-left: 1rem;
     padding-left: 1rem;
 }
@@ -91,4 +95,19 @@
 
 .boys {
     border-left: 4px solid #8f0100;
+}
+
+.technologies>ul {
+    width: max-content;
+}
+
+@media only screen and (min-width: 770px) {
+    .technologies>ul {
+        columns: 2;
+        column-gap: 10em;
+    }
+}
+
+.technologies>ul>li {
+    width: max-content;
 }
