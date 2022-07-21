@@ -1,12 +1,22 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Tag from '../Tag/Tag'
 import './SelectItem.css'
 
-function SelectItem({tag}) {
+function SelectItem({tag, selectedTags, setTags}) {
+  const [checked, setChecked] = useState(false)
+
+  const handleCheck = () => {
+    setChecked(!checked);
+    if (checked)
+      setTags([...selectedTags, tag]);
+    else
+      setTags(selectedTags.filter(t => t != tag));
+  }
+
   return (
     <div className='selectItem'>
-        <Tag name={tag}/>
-        <input className='tagCheckbox' type='checkbox'/>
+        <input className='tagCheckbox' type='checkbox' checked={checked} onChange={handleCheck} />
+        <Tag name={tag}/>       
     </div>
   )
 }

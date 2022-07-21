@@ -1,6 +1,4 @@
 .selectItem {
-    display: flex;
-    justify-content: space-between;
     border: 1px solid grey;
     border-radius: 7px;
     margin: 5px;
@@ -8,6 +6,6 @@
 }
 
 .tagCheckbox {
-    text-align: end;
     width: 1em;
+    margin-right: 5px;
 }

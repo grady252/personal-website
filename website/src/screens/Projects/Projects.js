@@ -7,6 +7,9 @@ import Controls from '../../compomnents/Controls/Controls';
 
 function Projects() {
   const [projects, setProjects] = useState([]);
+  const [tags, setTags] = useState([]);
+  const [filter, setFilter] = useState("");
+
   const ref = collection(firestore, "projects");
 
   const getData = async () => {
@@ -22,11 +25,21 @@ function Projects() {
     getData();
   }, []);
 
+  const filterProjects = (ps) => {
+    let filteredProjects;
+    filteredProjects = JSON.parse(JSON.stringify(ps));
+    if (filter.length !== 0)
+      filteredProjects = filteredProjects.filter(p => p.name.includes(filter) || p.description.includes(filter));
+    if (tags.length !== 0)
+      filteredProjects.filter(p => p.tags.some(t => tags.includes(t)));
+    return filteredProjects;
+  }
+
   return (
     <div className='projects'>
       <div className='projectsDisplay'>
-        <Controls projects={projects} setProjects={setProjects}/>
-        <Table projects={projects} setProjects={setProjects}/>
+        <Controls projects={filterProjects(projects)} selectedTags={tags} setTags={setTags} setFilter={setFilter} />
+        <Table projects={filterProjects(projects)}/>
       </div>
     </div>
   )

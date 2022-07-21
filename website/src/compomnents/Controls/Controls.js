@@ -2,7 +2,7 @@ import React from 'react'
 import SelectBox from '../SelectBox/SelectBox'
 import './Controls.css'
 
-function Controls({ projects, setProjects }) {
+function Controls({ projects, selectedTags, setTags, setFilter }) {
 
     const getTags = (projs) => {
         const uniqueTags = [];
@@ -17,8 +17,8 @@ function Controls({ projects, setProjects }) {
 
     return (
         <div className='controlsContainer'>
-            <input className='filterInput' type={'text'} placeholder='Filter'/>
-            <SelectBox tags={getTags(projects)}/>
+            <input className='filterInput' type={'text'} placeholder='Filter' onChange={e => setFilter(e.target.value)} />
+            <SelectBox tags={getTags(projects)} selectedTags={selectedTags} setTags={setTags} />
         </div>
     )
 }
