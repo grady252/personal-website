@@ -8,7 +8,7 @@ function TableRow({project}) {
         <td>{project.description}</td>
         <td>
             {
-                project.tags.map(t => <Tag name={t}/>)
+                project.tags.map(t => <Tag key={t} name={t}/>)
             }
         </td>
         <td><a href={project.link}>Link</a></td>

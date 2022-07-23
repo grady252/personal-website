@@ -6,11 +6,11 @@ function SelectItem({tag, selectedTags, setTags}) {
   const [checked, setChecked] = useState(false)
 
   const handleCheck = () => {
-    setChecked(!checked);
-    if (checked)
+    if (!checked)
       setTags([...selectedTags, tag]);
     else
       setTags(selectedTags.filter(t => t != tag));
+    setChecked(!checked);
   }
 
   return (

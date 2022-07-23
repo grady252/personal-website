@@ -12,20 +12,35 @@
 
 .tag-react {
     background-color: #61dbfb;
-    border-color: #4caec7;
+    border-color: #4daec7;
 }
 
 .tag-javascript {
-    background-color: #f0db4f;
-    border-color: #c7b542;
+    background-color: #ffd83a;
+    border-color: #ccac2e;
 }
 
 .tag-node {
-    background-color: #68a063;
-    border-color: #548150;
+    background-color: #83cd29;
+    border-color: #629a1e;
 }
 
 .tag-frontend {
-    background-color: #006fdd;
-    border-color: #0053a7;
+    background-color: #f16524;
+    border-color: #be4f1c;
+}
+
+.tag-firebase {
+    background-color: #f7c52a;
+    border-color: #c39c21;
+}
+
+.tag-java {
+    background-color: #e00308;
+    border-color: #ad0206;
+}
+
+.tag-opencv {
+    background-color: #8bda67;
+    border-color: #6aa64e;
 }

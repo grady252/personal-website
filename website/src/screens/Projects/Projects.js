@@ -31,7 +31,7 @@ function Projects() {
     if (filter.length !== 0)
       filteredProjects = filteredProjects.filter(p => p.name.includes(filter) || p.description.includes(filter));
     if (tags.length !== 0)
-      filteredProjects.filter(p => p.tags.some(t => tags.includes(t)));
+      filteredProjects = filteredProjects.filter(p => p.tags.includes(tags[0]));
     return filteredProjects;
   }
 

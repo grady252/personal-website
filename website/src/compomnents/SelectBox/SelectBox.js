@@ -5,7 +5,7 @@ import './SelectBox.css'
 function SelectBox({ tags, selectedTags, setTags }) {
     return (
         <div className='selectBoxContainer'>
-            {tags.map(t => <SelectItem tag={t} selectedTags={selectedTags} setTags={setTags} />)}
+            {tags.map(t => <SelectItem key={t} tag={t} selectedTags={selectedTags} setTags={setTags} />)}
         </div>
     )
 }
