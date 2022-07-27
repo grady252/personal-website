@@ -26,8 +26,8 @@
 }
 
 .tag-frontend {
-    background-color: #f16524;
-    border-color: #be4f1c;
+    background-color: #30C3A6;
+    border-color: #23907a;
 }
 
 .tag-firebase {
@@ -43,4 +43,24 @@
 .tag-opencv {
     background-color: #8bda67;
     border-color: #6aa64e;
+}
+
+.tag-php {
+    background-color: #7377ad;
+    border-color: #51537a;
+}
+
+.tag-css {
+    background-color: #2965f1;
+    border-color: #204fbe;
+}
+
+.tag-express {
+    background-color: #e57373;
+    border-color: #b25959;
+}
+
+.tag-html {
+    background-color: #e96228;
+    border-color: #b54c1f;
 }
